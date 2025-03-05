@@ -1,4 +1,3 @@
-NAME := ex02
 CC := avr-gcc
 SRC := $(wildcard *.c)
 OBJ := $(SRC:.c=.o)
@@ -15,9 +14,7 @@ PARTNO = atmega328p
 PORT = /dev/ttyUSB0 
 INCLUDES = /usr/lib/avr/include/
 
-all : $(NAME)
-
-$(NAME) : hex flash
+all : hex flash
 
 #new added flag : -Os to allow for optimization
 %.o : %.c
@@ -29,7 +26,7 @@ $(BIN) : $(OBJ)
 hex : $(BIN)
 			$(AVR_COPY) -O ihex $(BIN) $(HEX) 
 
-flash : $(HEX)
+flash : hex
 			$(AVRD) -p $(PARTNO) -c $(PROGRAMMER) -b $(BRATE) -P $(PORT) -U flash:w:$(HEX):i
 
 clean :

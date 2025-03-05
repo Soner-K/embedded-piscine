@@ -6,7 +6,7 @@
 /*   By: sokaraku <sokaraku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 14:49:22 by sokaraku          #+#    #+#             */
-/*   Updated: 2025/03/04 18:36:59 by sokaraku         ###   ########.fr       */
+/*   Updated: 2025/03/05 14:01:17 by sokaraku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <util/delay.h>
 
 # define true 1
-# define BOUNCE_DELAY 10
+# define BOUNCE_DELAY 15
 
 int main(void)
 {

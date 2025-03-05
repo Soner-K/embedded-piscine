@@ -6,7 +6,7 @@
 /*   By: sokaraku <sokaraku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 14:37:56 by sokaraku          #+#    #+#             */
-/*   Updated: 2025/03/04 18:32:38 by sokaraku         ###   ########.fr       */
+/*   Updated: 2025/03/05 14:05:41 by sokaraku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@
 #include "macros.h"
 
 /**
- * @brief Modifies a value of an 8 bits int.
+ * @brief Modifies a value of an 8 bits int or prints it.
  * @param action The type of action to do `INCREMENT`, `DECREMENT` or `PRINT`
- * @returns The new value.
  */
 void	doAction(short action)
 {

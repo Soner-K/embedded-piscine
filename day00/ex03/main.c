@@ -6,7 +6,7 @@
 /*   By: sokaraku <sokaraku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 13:39:46 by sokaraku          #+#    #+#             */
-/*   Updated: 2025/03/04 18:34:31 by sokaraku         ###   ########.fr       */
+/*   Updated: 2025/03/05 14:03:49 by sokaraku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int main( void )
 				PORTB ^= (1 << PB0); //XOR is used at the bit PB0
 			while ((PIND & (1 << PD2)) == 0) //as long as the button is pressed, we wait, to avoid multiple same read
 				;
-			//if the while loop wasn't there, a switch will be interpreted as multiple ones
 		}
 	}
 }

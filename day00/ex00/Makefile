@@ -1,4 +1,3 @@
-NAME := ex00
 CC := avr-gcc #avr compiler
 SRC := main.c
 
@@ -14,9 +13,7 @@ PARTNO = atmega328p #avr device
 PORT = /dev/ttyUSB0 
 
 #executes the hex rule and then the flash rule
-all : $(NAME)
-
-$(NAME) : hex flash
+all : hex flash
 
 #compiles the code into a bin file, that is then copied into a hex file
 hex : $(SRC)
@@ -25,7 +22,7 @@ hex : $(SRC)
 
 #flashing the hex file to the microcontroller
 #flash memory doesnt depend on electricity (program can be kept in memory and run each time the mc is switched on)
-flash : $(HEX)
+flash : hex
 		$(AVRD) -p $(PARTNO) -c $(PROGRAMMER) -b $(BRATE) -P $(PORT) -U flash:w:$(HEX)
 clean :
 		rm -rf $(HEX) $(BIN)

@@ -6,7 +6,7 @@
 /*   By: sokaraku <sokaraku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 12:04:21 by sokaraku          #+#    #+#             */
-/*   Updated: 2025/03/04 14:49:29 by sokaraku         ###   ########.fr       */
+/*   Updated: 2025/03/05 13:59:10 by sokaraku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,7 @@ int main( void )
 {
 	DDRB |= (1 << DDB0); //* sets DDB0 pin to 1
 	PORTB |= (1 << PB0); //*sets PB0 pin to 1
+
+	while (1)
+		;
 }
