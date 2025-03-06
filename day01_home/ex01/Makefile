@@ -12,7 +12,7 @@ BRATE = 115200
 PROGRAMMER = arduino
 PARTNO = atmega328p
 PORT = /dev/ttyUSB0 
-INCLUDES = /usr/lib/avr/include/avr/
+INCLUDES = /usr/lib/avr/include/
 
 all : hex flash
 
