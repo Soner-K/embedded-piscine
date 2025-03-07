@@ -1,0 +1,20 @@
+{
+    "configurations": [
+      {
+        "name": "AVR",
+        "includePath": [
+          "${workspaceFolder}/**",
+          "/usr/lib/avr/include/"
+        ],
+        "defines": [
+          "F_CPU=16000000UL",         // Clock frequency (16 MHz)
+          "__AVR_ATmega328P__"      // Define the microcontroller
+        ],
+        "compilerPath": "/usr/bin/avr-gcc", // Replace with the EXACT path from `which avr-gcc`
+        "cStandard": "c11",
+        "cppStandard": "c++11",
+        "intelliSenseMode": "gcc-x64" // Or "linux-gcc-x64"
+      }
+    ],
+    "version": 4
+}
